@@ -1,0 +1,246 @@
+header {
+    border-bottom: 1px solid #ccc;
+    height: 56px;
+    line-height: 56px;
+    box-sizing: content-box;
+    padding: 0 20px;
+}
+
+header .navbar {
+    float: left;
+}
+
+header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header .logo {
+    float: left;
+}
+header .logo >img {
+    height: 48px;
+}
+
+header .navbar a {
+    display: block;
+    line-height: 56px;
+    padding: 0 10px;
+    color: #333;
+    font-size: 17px;
+}
+
+header .navbar a:hover {
+    background-color: #eee;
+}
+header .navbar .active a{
+    color: #e86f5e;
+}
+
+header .navbar .active a:hover {
+    background-color: #fff;
+}
+
+header .navbar>li {
+    position: relative;
+    float: left;
+    padding: 0 4px;
+}
+
+header .navbar>li .tip {
+    position: absolute;
+    top: 10px;
+    right: -8px;
+}
+
+header .navbar>li:hover .child {
+    display: block;
+}
+header .navbar .child {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 2px rgba(0,0,0,0.1);
+    width: 120px;
+    display:none;
+}
+
+header .navbar .child a {
+    line-height: 40px;
+}
+
+header .navbar .child .tip {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* search area */
+header .search {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+}
+
+header .search input {
+    line-height: 30px;
+    padding: 0 20px;
+    font-size: 15px;
+    border: none;
+    background-color: #eee;
+    border-radius: 30px;
+    outline: none;
+    width: 180px;
+    transition: all .3s;
+}
+
+header .search input:focus~.search-panel {
+    display: block;
+}
+
+header .search input:focus {
+    width: 240px;
+}
+
+header .search input:focus~.icon-search {
+    background-color: #969696;
+    color: #fff; 
+}
+header .search .icon-search {
+    position: absolute;
+    color: #aaa;
+    right: 10px;
+    top: 12px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+header .search-panel {
+    position: absolute;
+    width: 250px;
+    padding: 16px;
+    background-color: #fff;
+    line-height: 1;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 2px rgba(0,0,0,0.1);
+    display: none;
+}
+
+header .search-panel:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    display: block;
+    width: 14px;
+    background-color: #fff;
+    transform: rotateZ(45deg);
+    height: 14px;
+    box-shadow: -2px -2px 2px -2px rgba(0,0,0,0.1);
+}
+
+header .search-panel h3 {
+    color: #888;
+    font-weight: normal;
+}
+
+header .search-panel .change{
+    float: right;
+    font-size: 13px;
+    color: #888;
+    font-weight: normal;
+}
+
+header .search-panel .labels {
+    margin-top: 10px;
+}
+
+header .search-panel .label {
+    float: left;
+    border: 1px solid #999;
+    padding: 2px 4px;
+    color: #999;
+    margin: 10px 10px 0 0;
+    border-radius: 3px;
+}
+
+header .search-panel .label:hover {
+    border-color: #000;
+}
+
+/* extra */
+
+header .extra {
+    float: right;
+    margin-right: 20px;   
+}
+
+header .extra a {
+    color: #333;
+}
+header .extra .icon-textsize {
+    float: left;
+    font-size: 30px;
+    color: #333;
+}
+
+header .extra .user {
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    padding: 0 10px;
+}
+
+header .extra .user:hover {
+    background-color: #eee;
+}
+
+header .extra .user:hover .child {
+    display: block;
+}
+header .extra .child {
+    position: absolute;
+    box-shadow: 0 1px 4px 2px rgba(0,0,0,0.1);
+    width: 160px;
+    left: 0;
+    line-height: 54px;
+    display: none;
+}
+
+header .extra .child a {
+    display: block;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+header .extra .child a:hover {
+    background-color: #eee;
+}
+
+header .extra .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+header .extra .icon-down {
+    vertical-align: middle;
+}
+
+header .extra .action-write {
+    float: left;
+    margin-left: 10px;
+    background-color: #e56e5d;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1;
+    padding: 10px 20px;
+    margin: 10px 0 0 20px;
+}
+
