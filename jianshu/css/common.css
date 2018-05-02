@@ -12,13 +12,26 @@ ul {
 }
 
 body {
-    font: 13px/1.4 Arial;
+    font: 13px/1.8 Arial;
+    color: #444;
 }
 .clearfix:after {
     content: '';
     display: block;
     clear: both;
 }
+
+.layout {
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 1300px) {
+    .layout {
+        width: 1000px;
+    }
+}
+
 
 .tip {
     background-color: #e86f5e;
